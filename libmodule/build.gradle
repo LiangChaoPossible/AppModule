@@ -1,0 +1,52 @@
+/*
+ * Copyright (C) 2015 Baidu, Inc. All Rights Reserved.
+ */
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+apply plugin: 'android-library'
+
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "22.0.1"
+
+
+    defaultConfig {
+        versionCode 12
+        versionName "4"
+        minSdkVersion 8
+        targetSdkVersion 17
+        proguardFile "proguard-peoject.txt"
+    }
+
+    dependencies {
+        provided files('libs/mathutil.jar')
+    }
+
+    sourceSets {
+        main {
+            manifest {
+                srcFile 'AndroidManifest.xml'
+            }
+            res {
+                srcDir 'res'
+            }
+            java {
+                srcDir 'src'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}

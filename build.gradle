@@ -1,0 +1,53 @@
+/*
+ * Copyright (C) 2015 Baidu, Inc. All Rights Reserved.
+ */
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        versionCode 12
+        versionName "2xyx"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    dependencies {
+        compile files('libs/mathutil.jar')
+        compile project('libmodule')
+    }
+
+    sourceSets { // 配置文件及文件夹路径
+        main {
+            manifest {
+                srcFile 'AndroidManifest.xml'
+            }
+            res {
+                srcDir 'res'
+            }
+            java {
+                srcDir 'src'
+            }
+            assets {
+                srcDir 'assets'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/apple/Desktop/ImportModule/AppModule/build/intermediates/exploded-aar/AppModule/libmodule/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ae084f334b40601dd9f35acc456f1af9eadcbaa">
+        <dex dex="/Users/apple/Desktop/ImportModule/AppModule/build/intermediates/pre-dexed/debug/classes-52cb21e60a201e03cb4ee46506f65691a8c4145b.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Desktop/ImportModule/AppModule/libs/mathutil.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7bf72a12ed07076c28f9e4b9f9cbfa4bfc4be9e5">
+        <dex dex="/Users/apple/Desktop/ImportModule/AppModule/build/intermediates/pre-dexed/debug/mathutil-8d3b8a501b34bf2c09d7ba8a35da48bc8f26ca77.jar" />
+    </item>
+
+</items>
